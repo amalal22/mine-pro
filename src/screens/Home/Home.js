@@ -11,7 +11,7 @@ const Home = () => {
     queryKey: ["trip"],
     queryFn: () => getAllItrip(),
   });
-  console.log(data);
+  // console.log(data[0].image);
   const navigation = useNavigation();
   const items = data?.map((trip) => {
     return (
